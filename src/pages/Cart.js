@@ -42,7 +42,7 @@ const Cart = () => {
               </div>
             </Link>
           </div>
-          <div className="w-full lg:p-5 ml-6 shadow">
+          <div className="w-full lg:p-5 lg:ml-6 shadow">
             {cartProducts.map((product, index) => (
               <CartItem product={product} key={index} />
             ))}

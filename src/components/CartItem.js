@@ -37,25 +37,25 @@ const CartItem = (props) => {
           alt=""
         />
       </div>
-      <div className="text-lg">
+      <div className="lg:text-lg">
         <p>{product.title}</p>
       </div>
       <div>
         <p>{formatNumber(product.price)}đ</p>
       </div>
-      <div>
+      <div className="flex">
         <p
           onClick={() => handleMinusQuantity(product)}
-          className="select-none inline-block text-center text-xl w-8 h-8 hover:bg-main hover:text-white border-2 cursor-pointer"
+          className="select-none  text-center text-xl w-8 h-8 hover:bg-main hover:text-white border-2 cursor-pointer"
         >
           -
         </p>
-        <p className="select-none inline-block text-center text-xl w-10 h-8 border-y-2">
+        <p className="select-none  text-center text-xl w-10 h-8 border-y-2">
           {quantity}
         </p>
         <p
           onClick={() => handlePlusQuantity(product)}
-          className="select-none inline-block text-center text-xl w-8 h-8 hover:bg-main hover:text-white border-2 cursor-pointer"
+          className="select-none  text-center text-xl w-8 h-8 hover:bg-main hover:text-white border-2 cursor-pointer"
         >
           +
         </p>
